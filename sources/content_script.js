@@ -11,7 +11,6 @@ function deleteTaboolaElements(taboolaElements) {
 
 function goTime() {
   var taboolaElements = getTaboolaElements();
-  console.log(taboolaElements);
   deleteTaboolaElements(taboolaElements);
 }
 
