@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bye Bye Taboola",
+  "description": "Removes those awful Taboola ads from websites",
+  "version": "0.1",
+
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": {
+        "16": "sources/icon-16.png",
+        "48": "sources/icon-48.png",
+        "128": "icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["sources/content_script.js"]
+    }
+  ]
+}
